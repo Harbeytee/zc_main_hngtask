@@ -22,9 +22,9 @@ import {
   InvitePage,
   ResetPassword,
   ChangePassword,
+  WhyZuriChat,
   PrivacyPage
 } from "./pages";
-
 import TermsOfService from "../src-old/pages/termsOfService/index";
 import { useAuth } from "./auth/use-auth";
 
@@ -84,13 +84,14 @@ const App = () => (
           <Route exact path="/" component={HomePage} />
           {/* <Route exact path="/signout" component={SignOut} /> */}
           <Route exact path="/about" component={AboutPage} />
-          <Route exact path="/contact-us" component={ContactUsPage} />
           <Route exact path="/downloads" component={DownloadsPage} />
+          <Route exact path="/contact-us" component={ContactUsPage} />
           <Route exact path="/plugins" component={PluginsPage} />
           <Route exact path="/pricing" component={PricingPage} />
           <Route path="/invites/:id" component={InvitePage} />
           <Route exact path="/reset-password" component={ResetPassword} />
           <Route path="/change-password" component={ChangePassword} />
+          <Route path="/whyzurichat" component={WhyZuriChat} />
           <Route path="/privacy" component={PrivacyPage} />
           <Route path="/terms" component={TermsOfService} />
 
